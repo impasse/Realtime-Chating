@@ -36,4 +36,13 @@ public class Msg {
     public void setTime(String time) {
         this.time = time;
     }
+
+    @Override
+    public String toString() {
+        return "Msg{" +
+                "content='" + content + '\'' +
+                ", owner='" + owner + '\'' +
+                ", time='" + time + '\'' +
+                '}';
+    }
 }

@@ -103,7 +103,7 @@ public class ConnectionService extends Service{
                 msg.what = 0x2;
                 MainActivity.handler.sendMessage(msg);
             } else if ("msg".equals(type)) {
-                return new Msg(json.getString("content"), "robot", json.getString("time"));
+                return new Msg(json.getString("content"), json.getString("owner"), json.getString("time"));
             }
         } catch (Exception e) {
             e.printStackTrace();

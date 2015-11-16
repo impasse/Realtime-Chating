@@ -20,6 +20,7 @@ var server = net.createServer(function (sock) {
     var recvmsg = function (msg) {
         console.log("recv msg" + JSON.stringify(msg));
         sock.write(JSON.stringify({
+            "owner":msg.owner,
             "type": "msg",
             "content": msg.content,
             "time": msg.time

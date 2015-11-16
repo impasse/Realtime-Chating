@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -60,6 +61,7 @@ public class ChatListAdapter extends BaseAdapter {
         }
         viewHolder = (ViewHolder) convertView.getTag();
         Msg msg = (Msg) this.getItem(position);
+        Log.d("DEBUG",msg.toString());
         if ("user".equals(msg.getOwner())) {
             viewHolder.user.setVisibility(View.VISIBLE);
             viewHolder.robot.setVisibility(View.INVISIBLE);
