@@ -16,9 +16,10 @@ WEB前端和后端通过Socket.IO库(Ajax Polling、WebSocket)
 
 ## 截图：
 
-![Android](https://github.com/lingmm/Realtime-Chating/raw/master/Snapshots/android.jpg)
-![WEB](https://github.com/lingmm/Realtime-Chating/raw/master/Snapshots/web.png)
-![Static](https://github.com/lingmm/Realtime-Chating/raw/master/Snapshots/static.png)
+![Samples](https://github.com/lingmm/Realtime-Chating/raw/master/Snapshots/simples.gif)
+[Android](https://github.com/lingmm/Realtime-Chating/raw/master/Snapshots/android.jpg)
+[WEB](https://github.com/lingmm/Realtime-Chating/raw/master/Snapshots/web.png)
+[Static](https://github.com/lingmm/Realtime-Chating/raw/master/Snapshots/static.png)
 
 ## Orz:
 
