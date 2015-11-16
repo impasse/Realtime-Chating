@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    h1 ChatServer
+    table
+        tr
+            th 客户端
+            th.content 内容
+            th 服务端
+        each item in msgs
+            tr
+            if item.owner == "user"
+                td
+                   img(src="images/user.png")
+            else
+                td
+            td.content
+                div= item.time
+                div= item.content
+            if item.owner == "robot"
+                td
+                    img(src="images/robot.png")
+            else
+                td
+    form(action="/post",method="post")
+        div#msgform
+            div
+                a(href="/dynamic",style="margin:0 auto") 实时页面
+            textarea(id="msg",name="msg",placeholder="输入内容发送到客户端")
+            br
+            input(type="submit",value="发送")
+    script
+        | document.getElementById("msg").focus();

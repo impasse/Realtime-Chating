@@ -1,0 +1,17 @@
+block head append
+    link(rel='stylesheet', href='/stylesheets/dynamic.css')
+    script(src="/socket.io/socket.io.js")
+    script
+        | var msgs = !{msgs}
+block content
+    h1 ChatServer
+    ul#msgs
+
+    form(action="#",method="post")
+        div#msgform
+            div
+                a(href="/",style="margin:0 auto") 静态页面
+            textarea(id="msg",name="msg",placeholder="输入内容发送到客户端")
+            br
+            input(id="submit",type="button",value="发送")
+    script(src="/javascripts/dynamic.js")

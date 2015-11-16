@@ -1,0 +1,40 @@
+body {
+    padding: 20px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#main {
+    margin: 0 auto;
+}
+
+a {
+    color: #00B7FF;
+}
+
+h1 {
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+    width: 100%;
+}
+td,th {
+    min-height: 64px;
+    width: 64px;
+    text-align: center;
+}
+
+td.content,th.content {
+    width: 400px;
+}
+
+#msgform {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+}
