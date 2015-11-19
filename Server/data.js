@@ -11,7 +11,7 @@ var msg = {
 };
 
 Date.prototype.toString = function(){
-    return this.getFullYear() + "-" + this.getMonth() + "-" + this.getDate() + " " +
+    return this.getFullYear() + "-" + (this.getMonth()+1) + "-" + this.getDate() + " " +
         (this.getHours() > 9 ? this.getHours() : "0" + this.getHours())
         + ":" +
         (this.getMinutes()>9?this.getMinutes():"0"+this.getMinutes());
