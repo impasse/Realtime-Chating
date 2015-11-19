@@ -1,4 +1,5 @@
 var eventemitter = require('events').EventEmitter;
+var xssencode = require('htmlencode').XSSEncode;
 var event = new eventemitter();
 event.setMaxListeners(0);
 
@@ -20,7 +21,7 @@ Date.prototype.toString = function(){
 function addMsg(owner,content,time){
     var tmp = Object.create(msg);
     tmp.owner = owner;
-    tmp.content = content;
+    tmp.content = xssencode(content);
     tmp.time = time.toString();
     msgs.push(tmp);
     event.emit('new',tmp);

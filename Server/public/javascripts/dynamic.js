@@ -7,8 +7,8 @@
 
     function addMsgToPage(msg) {
         var m = document.createElement("li");
-        m.innerText = (msg.owner == "user" ? "用户" : "服务端") +
-            "于" + msg.time + " 发送内容: " + escape(msg.content);
+        m.innerHTML = (msg.owner == "user" ? "用户" : "服务端") +
+        "于" + msg.time + " 发送内容: " + msg.content;
         ul.appendChild(m);
     }
 

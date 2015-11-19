@@ -16,7 +16,7 @@ block content
                 td
             td.content
                 div= item.time
-                div= item.content
+                div !{item.content}
             if item.owner == "robot"
                 td
                     img(src="images/robot.png")
